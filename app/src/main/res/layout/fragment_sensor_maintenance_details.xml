@@ -1,0 +1,295 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.android.smartstreetadminapp.SensorMaintenanceDetails">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Sensor Maintenance"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:id="@+id/heading"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/heading"
+        android:text="Maintenance"
+        android:textColor="#000000"
+        android:id="@+id/main_heading"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_below="@id/main_heading"
+        android:background="#000000"></View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/view1"
+        android:id="@+id/details"
+        android:layout_marginBottom="10dp">
+
+        <LinearLayout
+            android:id="@+id/sensor_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/sname"
+                android:layout_marginBottom="5dp"
+                android:textColor="#03a9f4"
+                android:textSize="20dp"
+                android:inputType="textNoSuggestions"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model"
+                android:layout_marginBottom="5dp"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:layout_marginBottom="5dp"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last upgraded"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/smodel"
+                android:focusableInTouchMode="false"
+                android:layout_marginBottom="5dp"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:inputType="textNoSuggestions"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:inputType="textNoSuggestions"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/date"
+                android:inputType="textNoSuggestions"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/details"
+        android:id="@+id/view2"
+        android:background="#000000"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="20dp"
+        android:text="Deployment"
+        android:id="@+id/depText"
+        android:layout_below="@id/view2"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view3"
+        android:layout_below="@id/depText"
+        android:background="#000000"></View>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/view3"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/relativeLayout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deployed on"
+                android:layout_marginBottom="5dp"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deployment Date"
+                android:layout_marginBottom="5dp"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deployer"
+                android:textColor="#03a9f4"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:id="@+id/dtree"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:inputType="textNoSuggestions"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ddate"
+                android:clickable="false"
+                android:inputType="textNoSuggestions"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textNoSuggestions"
+                android:id="@+id/dname"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:layout_marginBottom="5dp"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="16dp"
+            android:padding="0dp"
+            android:id="@+id/save"
+            android:src="@drawable/save"
+            app:borderWidth="0dp"
+            android:visibility="invisible"
+            app:layout_anchorGravity="top" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/share_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="bottom|start"
+            android:padding="0dp"
+            android:src="@drawable/edit4" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.android.smartstreetadminapp.TreeRegister">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/registration1" />
+
+    <EditText
+        android:id="@+id/sensorName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Name..."
+        android:inputType="textPersonName"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sensorModel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Model..."
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sensorManufacturer"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Manufacturer..."
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/sensorManufacturedDate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:hint="Manufactured Date..."
+        android:layout_marginBottom="10dp"
+        android:inputType="date"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/submit_bt"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/button_shape"
+            android:text="Submit"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/cancel_bt"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:background="@drawable/button_shape"
+            android:text="Cancel"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Register Using Barcode"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/scan_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/barcode"></ImageButton>
+
+</LinearLayout>

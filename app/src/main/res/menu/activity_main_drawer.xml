@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile5"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+
+    <item android:title="Sensor">
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_sensor_register"
+                    android:icon="@drawable/registration5"
+                    android:title="Registration" />
+                <item
+                    android:id="@+id/nav_sensor_maintenance"
+                    android:icon="@drawable/maintenance5"
+                    android:title="Maintenance" />
+
+                <item
+                    android:id="@+id/nav_sensor_records"
+                    android:icon="@drawable/records"
+                    android:title="Records" />
+
+                <item
+                    android:id="@+id/nav_sensor_interaction"
+                    android:icon="@drawable/records"
+                    android:title="Interaction Records" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Smart Tree">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_tree_registration"
+                    android:icon="@drawable/registration5"
+                    android:title="Registration" />
+
+                <item
+                    android:id="@+id/nav_tree_Maintenance"
+                    android:icon="@drawable/maintenance5"
+                    android:title="Maintenance" />
+
+                <item
+                    android:id="@+id/nav_tree_records"
+                    android:icon="@drawable/records"
+                    android:title="Records" />
+
+                <item
+                    android:id="@+id/nav_tree_interaction"
+                    android:icon="@drawable/records"
+                    android:title="Interaction Records" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings5"
+                android:title="Settings" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
